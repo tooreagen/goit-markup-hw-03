@@ -73,12 +73,13 @@ img {
 |-------------------------------|
 */
 .header {
+  border-bottom: 1px solid #ECECEC;
+}
+
+.header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-
-  border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -135,6 +136,9 @@ img {
 }
 
 .contact-list a {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -166,7 +170,7 @@ img {
 
 .hero {
   padding-top: 200px;
-  height: 600px;
+  padding-bottom: 200px;
 
   background: var(--hero-footer-bg);
 }
@@ -294,8 +298,7 @@ img {
 }
 
 .team-footer {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px;
 }
 
 .item-heading {
@@ -364,11 +367,13 @@ img {
 
 .portfolio-item {
   list-style-type: none;
-  border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-footer {
-  padding: 20px 24px;;
+  padding: 20px 24px;
+  border-left: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
 }
 
 .portfolio-heading {
@@ -381,6 +386,8 @@ img {
 }
 
 .portfolio-text {
+  margin-top: 4px;
+
   font-size: 16px;
   line-height: 1.88;
 
@@ -415,8 +422,11 @@ img {
 }
 
 .address-item {
-  line-height: 1.71;
   list-style-type: none;
+}
+
+.address-list .address-item + .address-item {
+  margin-top: 9px;
 }
 
 .address-map {
